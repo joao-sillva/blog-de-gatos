@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --white: #fff; 
+    --blue-100: #F4FCFF;
+    --blue-400: #387E96;
+    --blue-500: #065E7C; 
+    --gray-800: #202024; 
+    --gray-900: #121214;
+}
+
+html,
+body,
+input {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background-color: var(--blue-100);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#page {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.6rem 3.2rem;
+}
+
+header {
+    background: var(--blue-500);
+    padding: 1.6rem 2.2rem;
+    
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+header form {
+    flex: 1;
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 1.2rem;
+
+    background: var(--blue-400);
+    color: var(--white);
+    font-weight: 600;
+    
+    border: none;
+    border-radius: .6rem;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.avatar {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main {
+    background-color: var(--blue-100);
+    overflow-y: scroll;
+}
+
+main .container {
+    display: flex;
+    gap: 3.4rem;
+}
+
+section {
+    width: 80.3rem;
+    margin: 3rem 0 3.9rem;
+}
+
+section .title {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 3.1rem 0;
+}
+
+section .title img {
+    padding: 1.2rem;
+    background: var(--blue-500);
+    border-radius: 50%;
+}
+
+section h1 {
+    flex: 1;
+    font-size: 2.4rem;    
+}
+
+section p {
+    font-weight: 400;
+}
+
+section p+p {
+    margin-top: 3.5rem;
+}
+
+aside {
+    margin-top: 3rem;
+}
+
+aside h1 {
+    font-size: 2.4rem;
+    margin-bottom: 3.2rem;
+}
+
+article {
+    margin-top: 3.2rem;
+    width: 38.4rem;
+    height: 8.5rem;
+
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+article h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    margin-bottom: .7rem;
+}
+
+article p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+footer {
+    background: var(--blue-400);
+    color: var(--white);
+    padding: 1.4rem 0;
+    text-align: center;
+}
